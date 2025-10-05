@@ -663,6 +663,30 @@ a:visited {
   }
 }
 
+.instant-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.instant-tooltip:hover::before {
+    content: attr(instant-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 12px;
+/*    margin-bottom: 5px; */
+    z-index: 1000;
+}
+
+.instant-tooltip {
+    text-decoration: none;
+}
 
 /* Tablettes (600px à 900px) */
 @media screen and (min-width: 600px) and (max-width: 900px) {
