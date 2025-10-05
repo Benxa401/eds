@@ -674,7 +674,7 @@ a:visited {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: black
+    background: black;
     color: white;
     padding: 4px 8px;
     border-radius: 3px;
