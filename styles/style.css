@@ -666,10 +666,11 @@ a:visited {
 .instant-tooltip {
     position: relative;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .instant-tooltip:hover::before {
-    content: attr(instant-tooltip);
+    content: attr(data-tooltip);
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -677,16 +678,14 @@ a:visited {
     background: black;
     color: white;
     padding: 12px 16px;
+    text-align: center;
     border-radius: 3px;
     white-space: nowrap;
     min-width: 160px;
     font-size: 12px;
+    line-height: 1.4;
     margin-bottom: 5px;
     z-index: 1000;
-}
-
-.instant-tooltip {
-    text-decoration: none;
 }
 
 /* Tablettes (600px à 900px) */
