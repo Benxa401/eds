@@ -570,6 +570,47 @@ a:visited {
   text-indent: 0;
   line-height: 1.1;
 }
+
+.instant-tooltip {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.instant-tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    border-radius: 3px;
+    white-space: nowrap;
+    min-width: 160px;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
+.instant-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-bottom: 5px;
+}
+/***********************************************************************************
 /* Media Queries */
 /* Petits écrans (téléphones, moins de 600px) */
 @media screen and (max-width: 600px) {
@@ -579,7 +620,9 @@ a:visited {
   
   .wrapper, .wrappernav1, .wrappernav2 {
     flex-direction: column;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
     max-height: none;
   }
   .wrapper {
@@ -600,7 +643,7 @@ a:visited {
   
   .nav1, .nav2 {
     font-size: 1.8rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .pagearticle {
@@ -661,45 +704,6 @@ a:visited {
   }
 }
 
-.instant-tooltip {
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.instant-tooltip:hover::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: black;
-    color: white;
-    padding: 12px 16px;
-    text-align: center;
-    border-radius: 3px;
-    white-space: nowrap;
-    min-width: 160px;
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 5px;
-    z-index: 1000;
-}
-.instant-tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: black;
-    color: white;
-    padding: 12px 16px;
-    border-radius: 3px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 1000;
-    margin-bottom: 5px;
-}
 /* Tablettes (600px à 900px) */
 @media screen and (min-width: 600px) and (max-width: 900px) {
   html {
