@@ -633,6 +633,7 @@ a:visited {
     width: 100%;
     max-width: 100%;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
   
   .scroll-articles, .scroll-pages {
