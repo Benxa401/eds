@@ -709,6 +709,7 @@ a:visited {
   .wrappernav1, .wrappernav2 {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
   
   .k1column1 {
