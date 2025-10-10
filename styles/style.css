@@ -711,7 +711,10 @@ a:visited {
     row-gap: 0.8rem;
     column-gap: 0.8rem;
   }
-  
+
+  .nav1 {
+    padding: 0.5rem;
+  }
   .k1column1 {
     width: 20%;
   }
