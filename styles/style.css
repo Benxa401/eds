@@ -620,8 +620,8 @@ a:visited {
     .wrapper, .wrappernav1, .wrappernav2 {
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 5.6rem;
-    column-gap: 5.6rem;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
     max-height: none;
   }
   .wrapper {
