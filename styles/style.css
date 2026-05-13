@@ -694,6 +694,11 @@ a:visited {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .pagearticle .source {
+  max-width: 65%;
+  }
+
   .block-indent {
     font-size: 1.6rem; 
 
@@ -769,6 +774,10 @@ a:visited {
     font-size: 1.7rem;
   }
 
+  .pagearticle .source {
+  max-width: 65%;
+  }
+
   .block-indent {
     font-size: 1.7rem;
   }
@@ -789,6 +798,10 @@ a:visited {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 4rem;
+  }
+  
+  .pagearticle .source {
+  max-width: 80%;
   }
 
   /* Ajustements éventuels pour les grilles/colonnes */
@@ -814,6 +827,11 @@ a:visited {
     margin: 0 auto;
     padding: 0 5rem;
   }
+
+  .pagearticle .source {
+  max-width: 95%;
+  }
+
 }
 
 @media screen and (min-width: 2000px) {
