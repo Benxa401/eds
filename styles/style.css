@@ -413,6 +413,8 @@ a:visited {
 }
 .linesoustitre {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(15, 156, 181);
 }
 .linetitre a:link,
 .linetitre a:visited {
@@ -905,7 +907,7 @@ a:visited {
   margin: 0;
 }
 
-/* Adaptation pour mobile (optionnel mais recommandé) */
+/* */
 @media screen and (max-width: 600px) {
   .encadre-droite {
     font-size: 1.5rem;
@@ -913,6 +915,7 @@ a:visited {
     float: none; /* Annule le flottement sur mobile */
     width: 100%; /* Prend toute la largeur */
     margin: 1rem 0;
+    box-sizing: border-box;
   }
   .encadre-titre {
     font-size: 1.8rem;
